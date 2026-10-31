@@ -1,7 +1,7 @@
 
 #include <stdio.h>
 
-int main() {
+int main(void) {
     int v[5];
     int maior;
     int soma = 0;
