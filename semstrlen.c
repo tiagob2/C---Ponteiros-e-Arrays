@@ -1,21 +1,13 @@
-
 #include <stdio.h>
 
-int main(void) {
-    char s[50];
+int main() {
+    char s[100];
     int i = 0;
 
-    scanf("%49s", s);
+    fgets(s, sizeof(s), stdin);
+    while (s[i] != '\0') i++;
 
-    while (s[i] != '\0') {
-        i++;
-    }
-
-    for (i = i - 1; i >= 0; i--) {
-        printf("%c", s[i]);
-    }
-
-    printf("\n");
+    while (i > 0) printf("%c", s[--i]);
 
     return 0;
 }
