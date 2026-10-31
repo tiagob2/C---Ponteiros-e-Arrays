@@ -7,7 +7,7 @@ void dobra(int *v, int n) {
     }
 }
 
-int main() {
+int main(void) {
     int v[5] = {1, 2, 3, 4, 5};
 
     dobra(v, 5);
