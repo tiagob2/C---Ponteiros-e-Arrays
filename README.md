@@ -5,3 +5,5 @@ Em um vetor int a diferença entre dois endereços consecutivos será de 4 bytes
 Ex.:0x1000
     0x1004
 
+3) No exercício 6, explique em uma frase o que o AddressSanitizer detectou e por que, sem ele, o erro poderia passar despercebido:
+Ele detectou um acesso fora dos limites do vetor, o programa tentou acessar v[10] que está fora do vetor. C não verifica automaticamente os limites, e isso pode causar problemas sérios ao programa como o encerramento dele mesmo.
